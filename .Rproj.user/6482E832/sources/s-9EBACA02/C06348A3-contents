@@ -1,0 +1,9 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^Shiny\.R$
+^makeData\.R$
+^server\.R$
+^development$
+^development/*.R$
+^application$
+^application/*.R$

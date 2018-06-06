@@ -1,0 +1,16 @@
+#' Launche the shiny app
+#'
+#' @import shiny
+#' @return NULL
+#' @export
+#'
+#' @examples launch_application()
+#'
+launch_application <- function() {
+  appDir <- system.file("application", package = "marital")
+  if (appDir == "") {
+    stop("Could not find application. Try re-installing `marital`.", call. = FALSE)
+  }
+
+  shiny::runApp(appDir, display.mode = "normal")
+}
